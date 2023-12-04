@@ -20,12 +20,12 @@ function calcImc(peso, altura) {
     let imc = Number(peso / (altura*altura)).toFixed(2);
 
     if (imc < 18.5){
-        alert ("Seu IMC é " + imc + " você esta abaixo do peso ideal.");
+        alert (`Seu IMC é ${imc} você esta abaixo do peso ideal.`);
     } else if (imc >= 18.5 && imc <= 24.99){
-        alert ("Seu IMC é " + imc + " você esta no peso ideal.");
+        alert (`Seu IMC é ${imc} você esta no peso ideal.`);
     } else if (imc >= 20 && imc <= 29.99){
-        alert ("Seu IMC é " + imc + " você esta com sobrepeso.");
+        alert (`Seu IMC é ${imc} você esta com sobrepeso.`);
     } else {
-        alert ("Seu IMC é " + imc + " você esta obeso.");
+        alert (`Seu IMC é ${imc} você esta obeso.`);
     }
 }
